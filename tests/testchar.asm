@@ -1,0 +1,6 @@
+	.ORIG x3000
+	LD R0, MY_CHAR
+	OUT
+	HALT
+MY_CHAR	.FILL 'a'
+	.END

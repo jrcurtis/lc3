@@ -1,0 +1,9 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	BABL              3000
+//	GOBL              3000
+//	LABL              3000
+//	R0                3002
+//	BALM              3005

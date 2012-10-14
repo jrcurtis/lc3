@@ -1,0 +1,35 @@
+Haskell LC3 Assembler
+
+PROGRAM
+_________________
+
+This program implements an assembler for the LC-3 assembly language, a language
+for the abstract LC-3 computer, intended for learning the basics of computer
+architecture. The wikipedia article contains some information and links
+http://en.wikipedia.org/wiki/LC-3
+
+INSTALL
+_________________
+
+Build with
+	ghc --make hlc3as
+Run with
+	./hlc3as asmfile.asm
+which will produce asmfile.obj.
+
+Not tested with Hugs or alternative Haskell systems.
+
+CODE
+_________________
+
+LC3 exports the public interface, namely parseProgram, and assembleProgram.
+
+LC3.Parser contains the parser that converts the code into a symbolic Program
+object.
+
+LC3.Assembler is a second parser, which parses a list of Statement objects into
+a ByteString.
+
+LC3.Types holds the internal data types for representing code after it is
+parsed and some useful values such as the reserved words for LC-3 assembly and
+a table mapping instruction mnemonics to their opcodes.
